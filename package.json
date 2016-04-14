@@ -4,7 +4,7 @@
   "description": "Taking notes like a human person in 21th century.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pack-mac": "electron-packager . 'Scribble' --overwrite --platform=darwin --arch=x64 --icon=app.icns --prune=true --out=out"
   },
   "keywords": [
     "electron",
@@ -15,5 +15,9 @@
   "license": "MIT",
   "dependencies": {
     "menubar": "^4.1.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^6.0.2",
+    "electron-prebuilt": "^0.37.5"
   }
 }
